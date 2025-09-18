@@ -7,12 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1PmFEaZ8GUd9xKM1dAmo4DdDybJRocUHV
 """
 
-# Commented out IPython magic to ensure Python compatibility.
-# === Full Google Colab-ready code ===
-# Paste entire block into one Colab cell and run.
 
-# Install any needed packages (uncomment if running in a fresh Colab)
-!pip install joblib reportlab --quiet
+
 
 import os
 import joblib
@@ -44,7 +40,7 @@ from reportlab.lib.styles import getSampleStyleSheet
 # -----------------------
 # 0. Configuration
 # -----------------------
-CLEANED_CSV = "/content/Chicago_Crimes_2012_2017_cleaned_sample100k.csv"
+CLEANED_CSV = "/content/Chicago_Crimes_2012_2017_cleaned_.csv"
 OUTPUT_DIR = "/mnt/data/ml_arrest_output"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 MODELS_DIR = os.path.join(OUTPUT_DIR, "models")
